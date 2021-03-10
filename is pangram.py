@@ -11,6 +11,8 @@ def is_pangram(s):
 
 pangram = "The quick, brown fox jumps over the lazy dog!"
 print(is_pangram(pangram))
+
+
 liste_pangramme = ['machin', 'Portez ce vieux whisky au juge blond qui fume', 'Joyeux, ivre, fatigué, le nez qui pique, Clown Hary skie dans l’ombre', 'bizarre']
 
 for test in liste_pangramme:
