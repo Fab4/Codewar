@@ -21,6 +21,12 @@ def tower_builder(n_floors):
       
   return result
 
-print(tower_builder(1))
-print(tower_builder(2))
-print(tower_builder(3))
+# print(tower_builder(1))
+# print(tower_builder(2))
+# print(tower_builder(3))
+
+n_etages = input('Combien d\'étages ? ')
+
+tower = tower_builder(int(n_etages))
+for i in tower:
+  print(i)
