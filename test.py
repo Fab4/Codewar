@@ -40,12 +40,13 @@ def alfabet_position(texte):
     if c.isalpha():
       cc = str(ord(c)-96)
       print(c, cc)
-      result.append(cc)
+      # result.append(cc)
   return ' '.join(result)
 
 # print(alfabet_position('Portez ce vieux whisky au juge blond qui fume'))
 # print(alfabet_position("The sunset sets at twelve o' clock."))
-print(alfabet_position("The narwhal bacons at midnight."))
+# print(alfabet_position("The narwhal bacons at midnight."))
+print(alfabet_position('abcdefghijklmnopqrstuvwxyz'))
 # %%
 alfabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
