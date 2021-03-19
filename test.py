@@ -53,13 +53,9 @@ alfabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n',
 print('%'.join(alfabet))
 # %%
 def title_case(title, minor_words=''):
-    title = title.lower()
-    title_list = title.split(' ')
-    minor_words = minor_words.lower()
-    minor_words_list = minor_words.split(' ')
     result = []
-    for word in title_list:
-      if word not in minor_words:
+    for word in title.lower().split(' '):
+      if word not in minor_words.lower().split():
           result.append(word.capitalize())
       else:
           result.append(word)
