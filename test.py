@@ -69,3 +69,51 @@ print(title_case('the quick brown fox'))
 print(title_case('First a of in', 'an often into'))
 
 # %%
+def stock_list(listOfArt, listOfCat):
+    # pass
+    result =[]
+    for i in listOfCat:
+      total = 0
+      for j in listOfArt:
+        if j.index(i):
+          liste = j.split(' ')
+          total += int(liste[1])
+      result.append(total)
+    
+    return total
+
+b = ["ABAR 200", "CDXE 500", "BKWR 250", "BTSQ 890", "DRTY 600"]
+c = ["A", "B"]
+print(stock_list(b, c), "(A : 200) - (B : 1140)")
+# %%
+def stock_list(listOfArt, listOfCat):
+    for i in listOfCat:
+        print(i)
+        for j in listOfArt:
+            # if j.split(' ')[0] == i:
+            #     print(j.split()[1])
+          print(j.split()[0][0])
+          print(j.split()[1])
+
+
+b = ["ABAR 200", "CDXE 500", "BKWR 250", "BTSQ 890", "DRTY 600"]
+c = ["A", "B"]
+print(stock_list(b, c), "(A : 200) - (B : 1140)")
+# %%
+def stock_list(listOfArt, listOfCat):
+    result = ""
+    for i in listOfCat:
+      total = 0
+      for j in listOfArt:
+        if j.split(' ')[0][0] == i:
+            total += int(j.split()[1])
+      if result != "": result += " - "
+      if total != 0: result += "(" + i + " : " + str(total) + ")"
+    if result != "": return result
+
+b = ["ABAR 200", "CDXE 500", "BKWR 250", "BTSQ 890", "DRTY 600"]
+c = ["A", "B", "Z"]
+print(stock_list(b, c))
+# %%b = ["ABAR 200", "CDXE 500", "BKWR 250", "BTSQ 890", "DRTY 600"]
+c = ["A", "B", "Z"]
+print(stock_list(b, c))
