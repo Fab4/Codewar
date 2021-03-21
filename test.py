@@ -114,6 +114,34 @@ def stock_list(listOfArt, listOfCat):
 b = ["ABAR 200", "CDXE 500", "BKWR 250", "BTSQ 890", "DRTY 600"]
 c = ["A", "B", "Z"]
 print(stock_list(b, c))
-# %%b = ["ABAR 200", "CDXE 500", "BKWR 250", "BTSQ 890", "DRTY 600"]
-c = ["A", "B", "Z"]
-print(stock_list(b, c))
+# %%
+# Calcul suite de Fibonacci.
+a = 0
+b = 1
+c = 0
+print(a)
+print(b)
+while c < 1E100:
+  c = a + b
+  a = b
+  b = c
+  print(c)
+# %%
+# Calcul du facteur des termes 2 à 2 des éléments de la suite de Fibonacco.
+a = 0
+b = 1
+c = 0
+print('{} * {} = {}'.format(a, b, a * b))
+while c < 1E6:
+  c = a + b
+  a = b
+  b = c
+  print('{} * {} = {}'.format(a, b, a * b))
+
+# %%
+a = 5
+b = 4.8
+
+print('a={} et b={}'.format(a, b))
+
+# %%
